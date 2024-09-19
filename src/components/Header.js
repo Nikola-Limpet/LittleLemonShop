@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Menu from './Menu'
 import bannerImg from '../images/restauranfood.jpg'
 
 const Header = () => {
   return (
+    <>
     <header className='header'>
       <section>
         <div className="banner">
@@ -21,7 +23,10 @@ const Header = () => {
 
       </section>
 
+
     </header>
+    <Menu />
+    </>
   )
 }
 

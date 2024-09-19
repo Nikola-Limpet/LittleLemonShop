@@ -5,8 +5,8 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Menu from './Menu';
 import Booking from './Booking';
 import Header from './Header';
+import Footer from './Footer';
 import ConfirmedBooking from './ConfirmedBooking';
-
 
 const Main = () => {
 
@@ -69,9 +69,8 @@ const Main = () => {
           />  
         } />
         <Route path='/confirmed' element={<ConfirmedBooking />} />
-
       </Routes>
-
+      <Footer />
     </main>
   );
 };
