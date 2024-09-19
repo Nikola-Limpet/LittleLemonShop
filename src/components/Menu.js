@@ -2,6 +2,7 @@ import React from 'react';
 import recipes from '../recipes';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const orderNow = (title) => {
@@ -12,7 +13,11 @@ const Menu = () => {
     <div className='menu-container'>
       <div className='menu-header'>
         <h1>Most popular order</h1>
-        <button>See Menu</button>
+        <button>
+          <Link to='/menu' className='btn-menu'>
+            See Menu
+          </Link>
+        </button>
       </div>
 
       <div className='cards'>
